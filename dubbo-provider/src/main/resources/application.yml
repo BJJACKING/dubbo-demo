@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: dubbo-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+dubbo:
+  scan:
+    base-packages: com.example.dubbo.provider.service
+  registry:
+    address: nacos://localhost:8848
